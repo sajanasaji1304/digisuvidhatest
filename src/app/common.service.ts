@@ -9,17 +9,17 @@ export class CommonService {
   constructor(private _http:HttpClient) { }
 
   createUser(user:any){
-    return this._http.post("https://dev.digisuvidhacentre.com/Profile/api/MockUser",user)
+    return this._http.post(" http://localhost:3000/users",user)
 
   }
   getAllUser(){
-    return this._http.get(" https://dev.digisuvidhacentre.com/Profile/api/MockUser")
+    return this._http.get("  http://localhost:3000/users")
   }
   editUser(user:any){
-    return this._http.post(". https://dev.digisuvidhacentre.com/Profile/api/MockUser/{id}",user)
+    return this._http.post(" http://localhost:3000/users",user)
 
   }
   deleteUser(user:any){
-    return this._http.delete(" https://dev.digisuvidhacentre.com/Profile/api/MockUser/Delete/{id}"+user.id)
+    return this._http.delete(" http://localhost:3000/users"+user.id)
   }
 }

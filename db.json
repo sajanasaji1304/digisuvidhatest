@@ -7,6 +7,14 @@
       "age": 24,
       "gender": "female",
       "id": 2
+    },
+    {
+      "name": "sajana",
+      "mobile": 9544288380,
+      "email": "sajanasaji13@gmail.com",
+      "age": 24,
+      "gender": "female",
+      "id": 3
     }
   ]
 }

@@ -4,23 +4,23 @@
       <label for="exampleInputEmail"> Username</label>
       <input type="text" class="form-control" maxlength="50" name="name" formControlName="name" aria-describedby="emailHelp" 
       [(ngModel)]="userObj.name">
-      <span *ngIf=" name?.touched" > Username  required</span>
+      <span *ngIf="name?.touched  " > Username  required</span>
       <span *ngIf="name?.errors?.maxLength">username should be less than 50 letters</span>
-      
       </div>
+      
     
     <div class="form-group">
       <label for="exampleInputEmail">mobile number</label>
       <input type="number" class="form-control" formControlName="mobile" name="mobile" aria-describedby="emailHelp" 
       [(ngModel)]="userObj.mobile">
-      <span *ngIf=" mobile?.touched" > mobile required</span>
+      <span *ngIf=" mobile?.touched"  > mobile required</span>
       <span *ngIf="mobile?.errors?.pattern">mobile number is not valid</span>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail">Email address</label>
       <input type="email" class="form-control" formControlName="email" name="email" aria-describedby="emailHelp" 
       [(ngModel)]="userObj.email">
-      <span *ngIf="email?.touched" > email  required</span>
+      <span *ngIf="email?.touched"  > email  required</span>
       <span *ngIf="email?.errors?.pattern" > email is invalid</span>
     </div>
     <div class="form-group">
